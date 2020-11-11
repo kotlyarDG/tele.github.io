@@ -1,0 +1,94 @@
+.info {
+	padding: 10px 0 23px 0;
+	&__item {
+	}
+}
+.item-info {
+	margin: 43px 0 0 0;
+
+	&:first-child {
+		margin: 0 0 0 0;
+	}
+	&__title-block {
+		display: flex;
+	}
+
+	&__title-info {
+		flex: 0 1 70%;
+		padding: 0 0 0 35px;
+
+		&--second {
+			text-align: right;
+			padding: 0 35px 0 0;
+		}
+	}
+
+	&__title {
+		font-family: "TeleBold";
+		font-size: 32px;
+		line-height: 45px;
+		color: #1f2229;
+	}
+
+	&__subtitle {
+		margin: 9px 0 0 0;
+		color: #1f2229;
+	}
+
+	&__title-img {
+		flex: 0 1 30%;
+		img {
+			width: 100%;
+		}
+	}
+
+	&__body {
+		padding: 0 35px 0 35px;
+
+		&--second {
+			text-align: right;
+		}
+	}
+
+	&__body-title {
+		font-family: "TeleBold";
+		color: #1f2229;
+		margin: 12px 0 0 0;
+	}
+
+	&__body-text {
+		color: #1f2229;
+		margin: 7px 0 0 0;
+		padding: 0 0 0 14px;
+		position: relative;
+
+		span {
+			font-family: "TeleBold";
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background: #1f2229;
+			position: absolute;
+			top: 8px;
+			left: 0;
+		}
+
+		&--second {
+			&:before {
+				content: "";
+				display: inline-block;
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				background: #1f2229;
+				position: static;
+				margin: 0 7px 0 0;
+			}
+		}
+	}
+}

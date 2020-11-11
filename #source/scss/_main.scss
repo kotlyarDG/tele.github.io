@@ -1,0 +1,76 @@
+.main {
+	min-height: 100vh;
+	background: url("../images/system_img/bg-main.jpg") center / cover no-repeat;
+	padding: 65px 0 80px 0;
+
+	&__logo {
+		margin: 0 auto 50px auto;
+		width: 87px;
+		height: 47px;
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__content {
+		background: url("../../images/system_img/phone-main.png") center / contain no-repeat;
+		padding: 0 25px;
+	}
+
+	&__circle {
+		width: 127px;
+		height: 127px;
+		border-radius: 50%;
+		background: #30c3f2;
+		box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.25);
+		transform: rotate(7.09deg) translateY(-15px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		font-family: "Stencil";
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+
+		color: #ffffff;
+
+		margin: 0 0 170px auto;
+	}
+
+	&__text-block {
+		background: #1f2229;
+		transform: rotate(-6.81deg) translateY(20px);
+		color: #ffffff;
+		padding: 16px 16px 20px 16px;
+	}
+
+	&__subtitle {
+		font-family: "Stencil";
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	&__title {
+		font-family: "Stencil";
+		font-size: 48px;
+		line-height: 57px;
+	}
+
+	&__text {
+		margin: 5px 0 0 0;
+		font-family: "TeleBold";
+		font-size: 15px;
+		line-height: 21px;
+	}
+
+	&__btn-wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__btn {
+		margin: 70px 0 0 0;
+	}
+}

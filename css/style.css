@@ -1,71 +1,493 @@
 * {
-	padding: 0;
-	margin: 0;
-	border: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 *, *:before, *:after {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :focus, :active {
-	outline: none;
+  outline: none;
 }
 
 a:focus, a:active {
-	outline: none;
+  outline: none;
 }
 
 nav, footer, header, aside {
-	display: block;
+  display: block;
 }
 
 html, body {
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 input, button, textarea {
-	font-family: inherit;
+  font-family: inherit;
 }
 
 input::-ms-clear {
-	display: none;
+  display: none;
 }
 
 button {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 button::-moz-focus-inner {
-	padding: 0;
-	border: 0;
+  padding: 0;
+  border: 0;
 }
 
 a, a:visited {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 ul li {
-	list-style: none;
+  list-style: none;
 }
 
 img {
-	vertical-align: top;
+  vertical-align: top;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-size: inherit;
-	font-weight: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+@font-face {
+  font-family: "TeleReg";
+  src: url("../fonts/Tele2DisplaySerif-Regular-short_W/Tele2DisplaySerif-Regular-short__W.eot");
+  src: url("../fonts/Tele2DisplaySerif-Regular-short_W/Tele2DisplaySerif-Regular-short__W.eot?#iefix") format("embedded-opentype"), url("../fonts/Tele2DisplaySerif-Regular-short_W/Tele2DisplaySerif-Regular-short__W.woff") format("woff"), url("../fonts/Tele2DisplaySerif-Regular-short_W/Tele2DisplaySerif-Regular-short__W.ttf") format("truetype"), url("../fonts/Tele2DisplaySerif-Regular-short_W/Tele2DisplaySerif-Regular-short__W.svg#Tele2DisplaySerifWebSHORT-Reg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TeleBold";
+  src: url("../fonts/Tele2DisplaySerif-Bold-short_W/Tele2DisplaySerif-Bold-short__W.eot");
+  src: url("../fonts/Tele2DisplaySerif-Bold-short_W/Tele2DisplaySerif-Bold-short__W.eot?#iefix") format("embedded-opentype"), url("../fonts/Tele2DisplaySerif-Bold-short_W/Tele2DisplaySerif-Bold-short__W.woff") format("woff"), url("../fonts/Tele2DisplaySerif-Bold-short_W/Tele2DisplaySerif-Bold-short__W.ttf") format("truetype"), url("../fonts/Tele2DisplaySerif-Bold-short_W/Tele2DisplaySerif-Bold-short__W.svg#Tele2DisplaySerifWebSHORT-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TeleTextBold";
+  src: url("../fonts/Tele2TextSans-Bold-short_W/Tele2TextSans-Bold-short__W.eot");
+  src: url("../fonts/Tele2TextSans-Bold-short_W/Tele2TextSans-Bold-short__W.eot?#iefix") format("embedded-opentype"), url("../fonts/Tele2TextSans-Bold-short_W/Tele2TextSans-Bold-short__W.woff") format("woff"), url("../fonts/Tele2TextSans-Bold-short_W/Tele2TextSans-Bold-short__W.ttf") format("truetype"), url("../fonts/Tele2TextSans-Bold-short_W/Tele2TextSans-Bold-short__W.svg#Tele2TextSansWebSHORT-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Stencil";
+  src: url("../fonts/Tele2StandardCTStencil Bold/standardctstencil_bold-webfont.woff") format("woff"), url("../fonts/Tele2StandardCTStencil Bold/standardctstencil_bold-webfont.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: "TeleReg";
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.wrapper {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+input[placeholder] {
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
+input::-moz-placeholder {
+  text-overflow: ellipsis;
+}
+
+input:-moz-placeholder {
+  text-overflow: ellipsis;
+}
+
+input:-ms-input-placeholder {
+  text-overflow: ellipsis;
+}
+
+svg path {
+  fill: inherit;
+  stroke: inherit;
+}
+
+svg rect {
+  fill: inherit;
+  stroke: inherit;
+}
+
+.btn {
+  font-family: "TeleTextBold";
+  font-size: 16px;
+  line-height: 18px;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 25px;
+  text-align: center;
+  padding: 15px 60px;
+  color: #ffffff;
+}
+
+.main {
+  min-height: 100vh;
+  background: url("../images/system_img/bg-main.jpg") center/cover no-repeat;
+  padding: 65px 0 80px 0;
+}
+
+.main__logo {
+  margin: 0 auto 50px auto;
+  width: 87px;
+  height: 47px;
+}
+
+.main__logo img {
+  max-width: 100%;
+}
+
+.main__content {
+  background: url("../../images/system_img/phone-main.png") center/contain no-repeat;
+  padding: 0 25px;
+}
+
+.main__circle {
+  width: 127px;
+  height: 127px;
+  border-radius: 50%;
+  background: #30c3f2;
+  -webkit-box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.25);
+  -webkit-transform: rotate(7.09deg) translateY(-15px);
+      -ms-transform: rotate(7.09deg) translateY(-15px);
+          transform: rotate(7.09deg) translateY(-15px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Stencil";
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 0 170px auto;
+}
+
+.main__text-block {
+  background: #1f2229;
+  -webkit-transform: rotate(-6.81deg) translateY(20px);
+      -ms-transform: rotate(-6.81deg) translateY(20px);
+          transform: rotate(-6.81deg) translateY(20px);
+  color: #ffffff;
+  padding: 16px 16px 20px 16px;
+}
+
+.main__subtitle {
+  font-family: "Stencil";
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.main__title {
+  font-family: "Stencil";
+  font-size: 48px;
+  line-height: 57px;
+}
+
+.main__text {
+  margin: 5px 0 0 0;
+  font-family: "TeleBold";
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.main__btn-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__btn {
+  margin: 70px 0 0 0;
+}
+
+.info {
+  padding: 10px 0 23px 0;
+}
+
+.item-info {
+  margin: 43px 0 0 0;
+}
+
+.item-info:first-child {
+  margin: 0 0 0 0;
+}
+
+.item-info__title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item-info__title-info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 70%;
+          flex: 0 1 70%;
+  padding: 0 0 0 35px;
+}
+
+.item-info__title-info--second {
+  text-align: right;
+  padding: 0 35px 0 0;
+}
+
+.item-info__title {
+  font-family: "TeleBold";
+  font-size: 32px;
+  line-height: 45px;
+  color: #1f2229;
+}
+
+.item-info__subtitle {
+  margin: 9px 0 0 0;
+  color: #1f2229;
+}
+
+.item-info__title-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+}
+
+.item-info__title-img img {
+  width: 100%;
+}
+
+.item-info__body {
+  padding: 0 35px 0 35px;
+}
+
+.item-info__body--second {
+  text-align: right;
+}
+
+.item-info__body-title {
+  font-family: "TeleBold";
+  color: #1f2229;
+  margin: 12px 0 0 0;
+}
+
+.item-info__body-text {
+  color: #1f2229;
+  margin: 7px 0 0 0;
+  padding: 0 0 0 14px;
+  position: relative;
+}
+
+.item-info__body-text span {
+  font-family: "TeleBold";
+}
+
+.item-info__body-text:before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #1f2229;
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+
+.item-info__body-text--second:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #1f2229;
+  position: static;
+  margin: 0 7px 0 0;
+}
+
+.shares {
+  padding: 23px 48px 48px 48px;
+  background: #1f2229;
+}
+
+@media (max-width: 350px) {
+  .shares {
+    padding: 23px 25px 48px 25px;
+  }
+}
+
+.shares__title {
+  font-family: "TeleBold";
+  font-size: 24px;
+  line-height: 34px;
+  color: #ffffff;
+  margin: 0 0 35px 0;
+}
+
+.shares__btn-wrapper {
+  margin: 55px 0 0 0;
+}
+
+.item-share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 55px 0 0 0;
+}
+
+.item-share:first-child {
+  margin: 0 0 0 0;
+}
+
+.item-share__img {
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  background: #31c3f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 114px;
+          flex: 0 0 114px;
+}
+
+.item-share__img img {
+  max-width: 50%;
+}
+
+.item-share__body {
+  padding: 0 0 0 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.item-share__title {
+  font-family: "TeleBold";
+  font-size: 28px;
+  line-height: 39px;
+  color: #ffffff;
+}
+
+.item-share__text {
+  font-family: "TeleBold";
+  color: #ffffff;
+}
+
+.item-share__body--right {
+  text-align: right;
+  padding: 0 25px 0 0;
+}
+
+.list {
+  padding: 30px 0 5px 0;
+}
+
+.list__title-block {
+  padding: 0 37px;
+}
+
+.list__title {
+  font-family: "TeleBold";
+  font-size: 32px;
+  line-height: 45px;
+  color: #1f2229;
+}
+
+.list__text {
+  margin: 6px 0 0 0;
+  color: #1f2229;
+}
+
+.list__body {
+  padding: 65px 30px 0 0;
+  background: url("../../images/system_img/phone-3.png") left/contain no-repeat;
+  text-align: right;
+}
+
+.list__item {
+  margin: 18px 0 0 0;
+  font-family: "TeleBold";
+}
+
+.list__item:first-child {
+  margin: 0 0 0 0;
+}
+
+.list__item span {
+  margin: 0 9px 0 0;
+  font-family: "Stencil";
+  font-size: 24px;
+  line-height: 29px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1f2229;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background: #31c3f2;
+  -webkit-transform: translateY(3px);
+      -ms-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.list__btn {
+  border: 1px solid #1f2229;
+  color: #1f2229;
+  margin: 75px 0 0 0;
 }

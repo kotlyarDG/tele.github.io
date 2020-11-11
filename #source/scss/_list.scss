@@ -1,0 +1,56 @@
+.list {
+	padding: 30px 0 5px 0;
+
+	&__title-block {
+		padding: 0 37px;
+	}
+
+	&__title {
+		font-family: "TeleBold";
+		font-size: 32px;
+		line-height: 45px;
+		color: #1f2229;
+	}
+
+	&__text {
+		margin: 6px 0 0 0;
+		color: #1f2229;
+	}
+
+	&__body {
+		padding: 65px 30px 0 0;
+		background: url("../../images/system_img/phone-3.png") left / contain no-repeat;
+		text-align: right;
+	}
+
+	&__item {
+		margin: 18px 0 0 0;
+		font-family: "TeleBold";
+		&:first-child {
+			margin: 0 0 0 0;
+		}
+		span {
+			margin: 0 9px 0 0;
+			font-family: "Stencil";
+			font-size: 24px;
+			line-height: 29px;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+
+			color: #1f2229;
+
+			width: 37px;
+			height: 37px;
+			border-radius: 50%;
+			background: #31c3f2;
+			transform: translateY(3px);
+		}
+	}
+
+	&__btn {
+		border: 1px solid #1f2229;
+		color: #1f2229;
+		margin: 75px 0 0 0;
+	}
+}

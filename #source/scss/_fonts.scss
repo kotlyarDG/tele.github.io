@@ -1,1 +1,46 @@
 // Файл подключения шрифтов
+@font-face {
+	font-family: "TeleReg";
+	src: url("../fonts/Tele2DisplaySerif-Regular-short_W/Tele2DisplaySerif-Regular-short__W.eot");
+	src: url("../fonts/Tele2DisplaySerif-Regular-short_W/Tele2DisplaySerif-Regular-short__W.eot?#iefix")
+			format("embedded-opentype"),
+		url("../fonts/Tele2DisplaySerif-Regular-short_W/Tele2DisplaySerif-Regular-short__W.woff") format("woff"),
+		url("../fonts/Tele2DisplaySerif-Regular-short_W/Tele2DisplaySerif-Regular-short__W.ttf") format("truetype"),
+		url("../fonts/Tele2DisplaySerif-Regular-short_W/Tele2DisplaySerif-Regular-short__W.svg#Tele2DisplaySerifWebSHORT-Reg")
+			format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TeleBold";
+	src: url("../fonts/Tele2DisplaySerif-Bold-short_W/Tele2DisplaySerif-Bold-short__W.eot");
+	src: url("../fonts/Tele2DisplaySerif-Bold-short_W/Tele2DisplaySerif-Bold-short__W.eot?#iefix")
+			format("embedded-opentype"),
+		url("../fonts/Tele2DisplaySerif-Bold-short_W/Tele2DisplaySerif-Bold-short__W.woff") format("woff"),
+		url("../fonts/Tele2DisplaySerif-Bold-short_W/Tele2DisplaySerif-Bold-short__W.ttf") format("truetype"),
+		url("../fonts/Tele2DisplaySerif-Bold-short_W/Tele2DisplaySerif-Bold-short__W.svg#Tele2DisplaySerifWebSHORT-Bold")
+			format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TeleTextBold";
+	src: url("../fonts/Tele2TextSans-Bold-short_W/Tele2TextSans-Bold-short__W.eot");
+	src: url("../fonts/Tele2TextSans-Bold-short_W/Tele2TextSans-Bold-short__W.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Tele2TextSans-Bold-short_W/Tele2TextSans-Bold-short__W.woff") format("woff"),
+		url("../fonts/Tele2TextSans-Bold-short_W/Tele2TextSans-Bold-short__W.ttf") format("truetype"),
+		url("../fonts/Tele2TextSans-Bold-short_W/Tele2TextSans-Bold-short__W.svg#Tele2TextSansWebSHORT-Bold")
+			format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Stencil";
+	src: url("../fonts/Tele2StandardCTStencil Bold/standardctstencil_bold-webfont.woff") format("woff"),
+		url("../fonts/Tele2StandardCTStencil Bold/standardctstencil_bold-webfont.woff2") format("woff2");
+	font-weight: bold;
+	font-style: normal;
+}
