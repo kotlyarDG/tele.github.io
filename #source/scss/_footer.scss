@@ -1,3 +1,90 @@
-.footer{
-	
+.footer {
+	padding: 33px 30px 62px 37px;
+	color: #fff;
+	background: #1f2229;
+	&__row {
+		display: flex;
+	}
+
+	&__logo {
+		flex: 0 1 40%;
+	}
+
+	&__address {
+		flex: 0 1 60%;
+	}
+
+	&__address-img {
+		display: inline-block;
+	}
+
+	&__title {
+		font-family: "TeleBold";
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	&__title-address {
+		display: inline-block;
+	}
+
+	&__subtitle {
+		font-family: "TeleBold";
+	}
+
+	&__text {
+		font-size: 13px;
+		line-height: 18px;
+		opacity: 0.5;
+		margin: 3px 0 0 0;
+	}
+
+	&__phone-wrapper {
+		display: flex;
+		margin: 33px 0 10px 0;
+	}
+
+	&__phone-img {
+		margin: 0 5px 0 0;
+	}
+
+	&__phone-item {
+		flex: 0 1 50%;
+
+		&:first-child {
+			padding: 0 5px 0 0;
+		}
+
+		&:last-child {
+			padding: 0 0 0 5px;
+		}
+	}
+
+	&__title-share {
+		margin: 35px 0 0 0;
+	}
+
+	&__links {
+		margin: 20px 0 0 0;
+	}
+
+	&__social {
+		display: inline-block;
+		margin: 0 27px 0 0;
+	}
+
+	&__line {
+		margin: 37px 0 25px 0;
+		border: 0.5px solid #ffffff;
+	}
+
+	&__ps {
+		font-size: 11px;
+		line-height: 15px;
+		margin: 0 0 29px 0;
+
+		&:last-child {
+			margin: 0 0 0 0;
+		}
+	}
 }

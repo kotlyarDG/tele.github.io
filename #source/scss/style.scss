@@ -17,6 +17,10 @@ body {
 	font-family: "TeleReg";
 	font-size: 16px;
 	line-height: 22px;
+
+	&._lock {
+		overflow: hidden;
+	}
 }
 
 .wrapper {
@@ -52,10 +56,109 @@ svg {
 // Подключение общих блоков
 @import "blocks";
 
+.popup {
+	position: fixed;
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background-color: rgba(0, 0, 0, 0.95);
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s;
+
+	&.open {
+		opacity: 1;
+		visibility: visible;
+	}
+	&__wrapper {
+		background: #fff url("../../images/system_img/bg-p.png") top right no-repeat;
+	}
+
+	&__content {
+		padding: 31px 0 48px 0;
+	}
+
+	&__head {
+		padding: 0 26px 0 36px;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 0 8px 0;
+	}
+
+	&__logo {
+	}
+
+	&__close {
+	}
+
+	&__form {
+		padding: 0 80px 0 65px;
+	}
+
+	&__input {
+		height: 60px;
+		width: 100%;
+		margin: 0 0 28px 0;
+		font-size: 15px;
+		line-height: 22px;
+		letter-spacing: -0.408px;
+
+		color: #3c3c43;
+		padding: 0 16px;
+		border-bottom: 1px solid rgba($color: #000, $alpha: 0.2);
+
+		&::placeholder {
+			font-size: 15px;
+			line-height: 22px;
+			letter-spacing: -0.408px;
+
+			color: #3c3c43;
+
+			opacity: 0.6;
+		}
+	}
+
+	&__check {
+		margin: 16px 0 0 0;
+		font-size: 15px;
+		line-height: 21px;
+
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 11px;
+			height: 11px;
+			border: 1px solid #1f2229;
+			margin-right: 11px;
+		}
+	}
+
+	&__check-input {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+
+		&:checked + label:before {
+			background-color: #1f2229;
+		}
+	}
+
+	&__btn {
+		margin: 30px 0 0 0;
+		background-color: #fff;
+		color: #1f2229;
+		border: 1px solid #1f2229;
+	}
+}
+
 @import "main";
 @import "info";
 @import "share";
 @import "list";
+@import "call";
 
 // Footer
 @import "footer";

@@ -37,7 +37,7 @@
 				</div>
 			</div>
 			<div class="main__btn-wrapper">
-				<div class="main__btn btn">Узнать больше</div>
+				<a href="popup" class="main__btn btn popup-link">Узнать больше</a>
 			</div>
 
 		</section>
@@ -154,6 +154,81 @@
 				<div class="list__btn btn">Список смартфонов</div>
 			</div>
 		</section>
+
+		<section class="call">
+			<div class="call__title-block">
+				<p class="call__title list__title">Появились вопросы?</p>
+				<p class="call__text list__text">Вы можете оставить свой номер телефона и наши операторы свяжутся с вами в
+					ближайшее время.</p>
+			</div>
+			<form class="call__form">
+				<input type="number" name="" id="" class="call__phone" placeholder="Введите ваш номер телефона">
+				<button type="submit" class="call__btn btn">Заказать обратный звонок</button>
+			</form>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__row">
+				<div class="footer__logo">
+					<img src="images/system_img/logo-white.svg" alt="logo">
+				</div>
+				<div class="footer__address">
+					<img src="images/system_img/footer/map.svg" alt="map" class="footer__address-img">
+					<p class="footer__title footer__title-address">Адрес:</p>
+					<p class="footer__subtitle">ТРЦ “Кольцо”</p>
+					<p class="footer__text">ул. Петербургская, 1, Казань, Респ. Татарстан</p>
+				</div>
+			</div>
+			<div class="footer__phone-wrapper"><img src="images/system_img/footer/phone.svg" alt="phone"
+					class="footer__phone-img">
+				<p class="footer__title footer__title-phone">Контактые телефоны:</p>
+			</div>
+
+			<div class="footer__row">
+				<div class="footer__phone-item">
+					<p class="footer__subtitle">611</p>
+					<p class="footer__text">Для номеров Tele2</p>
+				</div>
+				<div class="footer__phone-item">
+					<p class="footer__subtitle">8 (843) 265-00-00</p>
+					<p class="footer__text">Для звонков с городских телефонов</p>
+				</div>
+			</div>
+			<p class="footer__title footer__title-share">Расскажите друзьям</p>
+			<div class="footer__links">
+				<a href="#" class="footer__social"><img src="images/system_img/footer/vk.svg" alt=""></a>
+				<a href="#" class="footer__social"><img src="images/system_img/footer/facebook.svg" alt=""></a>
+				<a href="#" class="footer__social"><img src="images/system_img/footer/twitter.svg" alt=""></a>
+			</div>
+			<div class="footer__line"></div>
+			<p class="footer__ps">С 4 апреля 2013 года Теле2 Россия Интернешнл Селлулар БВ и ее аффилированные лица не
+				принадлежат или не являются аффилированными с Теле2 АБ и любой ее дочерней компанией. Товарный знак Tele2
+				используется на основании лицензии от Теле2 АБ или ее дочерней компании.
+			</p>
+			<p class="footer__ps">Продолжая использовать наш сайт, вы даете согласие на обработку файлов cookie в
+				соответствии с Политикой Компаний Группы Tele2 в области использования файлов cookie, а также соглашаетесь с
+				Правилами пользования личным кабинетом.
+				© Tele2 Россия, 2020</p>
+		</footer>
+
+		<div class="popup" id="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__head">
+						<div class="popup__logo"><img src="images/system_img/logo.svg" alt="logo"></div>
+						<div class="popup__close close-popup"><img src="images/system_img/close-popup.svg" alt=""></div>
+					</div>
+					<form action="" class="popup__form">
+						<input type="number" name="" id="" class="popup__input" placeholder="Введите ваш номер телефона">
+						<input type="checkbox" name="" id="check" class="popup__check-input">
+						<label class="popup__check" for="check">
+							Обработка персональных данных
+						</label>
+						<button type="submit" class="popup__btn btn">Заказать обратный звонок</button>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 
 

@@ -1,0 +1,42 @@
+.call {
+	padding: 65px 0 88px 0;
+	background: url("../../images/system_img/bg-q.png") bottom right no-repeat;
+
+	&__title-block {
+		padding: 0 88px 0 37px;
+	}
+
+	&__form {
+		margin: 23px 0 0 0;
+		padding: 0 50px;
+	}
+
+	&__phone {
+		height: 60px;
+		width: 100%;
+		margin: 0 0 28px 0;
+		font-size: 15px;
+		line-height: 22px;
+		letter-spacing: -0.408px;
+
+		color: #3c3c43;
+		padding: 0 16px;
+		border-bottom: 1px solid rgba($color: #000, $alpha: 0.2);
+
+		&::placeholder {
+			font-size: 15px;
+			line-height: 22px;
+			letter-spacing: -0.408px;
+
+			color: #3c3c43;
+
+			opacity: 0.6;
+		}
+	}
+
+	&__btn {
+		background: none;
+		border: 1px solid #1f2229;
+		color: #1f2229;
+	}
+}
