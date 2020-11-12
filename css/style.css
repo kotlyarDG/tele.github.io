@@ -720,7 +720,7 @@ svg rect {
 
 .footer__subtitle {
   font-family: "TeleBold";
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .footer__text {
