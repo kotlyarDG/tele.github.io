@@ -60,11 +60,11 @@ svg {
 	position: fixed;
 	display: block;
 	width: 100vw;
-	height: 100vh;
+	height: 120vh;
 	top: 0;
 	left: 0;
 	z-index: 50;
-	background-color: rgba(0, 0, 0, 0.95);
+	background-color: rgba(0, 0, 0, 0.85);
 	opacity: 0;
 	visibility: hidden;
 	transition: 0.4s;
@@ -74,7 +74,7 @@ svg {
 		visibility: visible;
 	}
 	&__wrapper {
-		background: #fff url("../../images/system_img/bg-p.png") top right no-repeat;
+		background: #fff url("../images/system_img/bg-p.png") top right no-repeat;
 	}
 
 	&__content {
@@ -86,12 +86,6 @@ svg {
 		display: flex;
 		justify-content: space-between;
 		margin: 0 0 8px 0;
-	}
-
-	&__logo {
-	}
-
-	&__close {
 	}
 
 	&__form {
