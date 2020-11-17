@@ -365,6 +365,9 @@ svg rect {
 
 .main__btn {
   margin: 70px 0 0 0;
+  background-color: #fff;
+  color: #1f2229;
+  padding: 15px 44px;
 }
 
 .info {
@@ -409,6 +412,10 @@ svg rect {
   color: #1f2229;
 }
 
+.item-info__subtitle span {
+  font-family: "TeleBold";
+}
+
 .item-info__title-img {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 30%;
@@ -421,6 +428,7 @@ svg rect {
 
 .item-info__body {
   padding: 0 35px 0 35px;
+  position: relative;
 }
 
 .item-info__body--second {
@@ -465,6 +473,38 @@ svg rect {
   background: #1f2229;
   position: static;
   margin: 0 7px 0 0;
+}
+
+.item-info__block-dop {
+  text-align: right;
+  background-color: #1f2229;
+  padding: 8px 20px;
+  display: inline-block;
+  -webkit-transform: rotate(8.45deg);
+      -ms-transform: rotate(8.45deg);
+          transform: rotate(8.45deg);
+  position: relative;
+  left: 50%;
+  bottom: 30px;
+}
+
+.item-info__price-dop {
+  font-family: "Stencil";
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.item-info__price-dop--strike {
+  font-family: "Stencil";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #ffffff;
+  opacity: 0.7;
 }
 
 .shares {

@@ -33,6 +33,10 @@
 	&__subtitle {
 		margin: 9px 0 0 0;
 		color: #1f2229;
+
+		span {
+			font-family: "TeleBold";
+		}
 	}
 
 	&__title-img {
@@ -44,6 +48,7 @@
 
 	&__body {
 		padding: 0 35px 0 35px;
+		position: relative;
 
 		&--second {
 			text-align: right;
@@ -90,5 +95,38 @@
 				margin: 0 7px 0 0;
 			}
 		}
+	}
+
+	&__block-dop {
+		text-align: right;
+		background-color: #1f2229;
+		padding: 8px 20px;
+		display: inline-block;
+		transform: rotate(8.45deg);
+
+		position: relative;
+		left: 50%;
+		bottom: 30px;
+	}
+
+	&__price-dop {
+		font-family: "Stencil";
+		font-weight: bold;
+		font-size: 22px;
+		line-height: 26px;
+
+		color: #ffffff;
+	}
+
+	&__price-dop--strike {
+		font-family: "Stencil";
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 19px;
+		text-decoration-line: line-through;
+
+		color: #ffffff;
+
+		opacity: 0.7;
 	}
 }
