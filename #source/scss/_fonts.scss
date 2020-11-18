@@ -39,8 +39,9 @@
 
 @font-face {
 	font-family: "Stencil";
-	src: url("../fonts/Tele2StandardCTStencil Bold/standardctstencil_bold-webfont.woff") format("woff"),
-		url("../fonts/Tele2StandardCTStencil Bold/standardctstencil_bold-webfont.woff2") format("woff2");
+	src: url("../fonts/Tele2StandardCTStencil-Bold/standardctstencil_bold-webfont.woff") format("woff"),
+		url("../fonts/Tele2StandardCTStencil-Bold/standardctstencil_bold-webfont.woff2") format("woff2"),
+		url("../fonts/Tele2StandardCTStencil-Bold/StandardCTStencil_Bold.svg#StandardCTStencil-Bold") format("svg");
 	font-weight: bold;
 	font-style: normal;
 }

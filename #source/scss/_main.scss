@@ -42,7 +42,7 @@
 		background: #1f2229;
 		transform: rotate(-6.81deg) translateY(20px);
 		color: #ffffff;
-		padding: 16px 16px 20px 16px;
+		padding: 5px 16px 20px 16px;
 	}
 
 	&__subtitle {
@@ -55,10 +55,11 @@
 		font-family: "Stencil";
 		font-size: 48px;
 		line-height: 57px;
+		text-transform: uppercase;
 	}
 
 	&__text {
-		margin: 5px 0 0 0;
+		margin: -5px 0 0 0;
 		font-family: "TeleBold";
 		font-size: 15px;
 		line-height: 21px;
