@@ -39,7 +39,13 @@ $(document).ready(function () {
 			} else {
 				bodyLock();
 			}
+			$('#check').prop('checked', false);
+			$('.popup__alert').hide()
+			$('.popup__block-ok').hide()
+			$('.popup__form').show()
 			currentPopup.classList.add('open');
+
+
 			currentPopup.addEventListener('click', function (e) {
 				if (!e.target.closest('.popup__content')) {
 					popupClose(e.target.closest('.popup'));
@@ -94,4 +100,18 @@ $(document).ready(function () {
 				Element.prototype.msMatchesSelector;
 		}
 	})();
+
+	$('.popup__btn').click(function (e) {
+		if ($('#check').is(':checked')) {
+			$('.popup__alert').hide()
+			$('.popup__form').hide()
+			$('.popup__block-ok').show()
+			e.preventDefault()
+		} else {
+			$('.popup__alert').show()
+			e.preventDefault()
+		}
+	});
+
+
 });

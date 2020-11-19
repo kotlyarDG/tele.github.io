@@ -90,6 +90,7 @@ svg {
 
 	&__form {
 		padding: 0 80px 0 65px;
+		position: relative;
 	}
 
 	&__input {
@@ -141,10 +142,53 @@ svg {
 	}
 
 	&__btn {
-		margin: 30px 0 0 0;
+		margin: 40px 0 0 0;
 		background-color: #fff;
 		color: #1f2229;
 		border: 1px solid #1f2229;
+
+		@media (max-width: 375px) {
+			margin: 60px 0 0 0;
+		}
+	}
+
+	&__alert {
+		font-size: 10px;
+		line-height: 14px;
+		color: #ff6161;
+		position: absolute;
+		left: 65px;
+		top: 57%;
+		max-width: 70%;
+
+		display: none;
+	}
+
+	&__block-ok {
+		padding: 55px 121px 120px 121px;
+		display: none;
+
+		@media (max-width: 375px) {
+			padding: 55px 60px 120px 60px;
+		}
+	}
+
+	&__title-ok {
+		font-family: "TeleBold";
+		font-size: 18px;
+		line-height: 25px;
+		text-align: center;
+
+		color: #1f2229;
+	}
+
+	&__text-ok {
+		font-family: "TeleReg";
+		font-size: 18px;
+		line-height: 25px;
+		text-align: center;
+
+		color: #1f2229;
 	}
 }
 
