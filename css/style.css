@@ -157,6 +157,19 @@ svg rect {
   color: #ffffff;
 }
 
+.title {
+  font-family: "TeleBold";
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 25px;
+  color: #1f2229;
+}
+
 .popup {
   position: fixed;
   display: block;
@@ -322,6 +335,114 @@ svg rect {
   color: #1f2229;
 }
 
+.first-block {
+  padding: 32px 0 42px 0;
+}
+
+.first-block__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 347px;
+  margin: 0 auto;
+}
+
+.first-block__title {
+  color: #1f2229;
+}
+
+.first-block__text {
+  max-width: 285px;
+}
+
+.second-block {
+  padding: 53px 0 14px 0;
+  background: url("../images/system_img/bg-block-2.svg") left bottom/contain no-repeat;
+}
+
+.second-block__wrapper {
+  width: 100%;
+}
+
+.second-block__title {
+  font-size: 32px;
+  line-height: 45px;
+  max-width: 322px;
+  margin: 0 auto 40px auto;
+}
+
+.second-block__body {
+  padding: 0 16px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.second-block__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.second-block__img img {
+  max-width: 100%;
+}
+
+.second-block__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.second-block__text span {
+  font-weight: bold;
+}
+
+.second-block__text-ps {
+  color: #fff;
+  text-align: right;
+  max-width: 318px;
+  margin: 15px 28px 0 auto;
+}
+
+.second-block__text-ps span {
+  font-weight: bold;
+}
+
+.third-block {
+  padding: 65px 0 33px 0;
+}
+
+.third-block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.third-block__body {
+  padding: 35px 0 0 35px;
+}
+
+.third-block__body--r {
+  padding: 35px 35px 0 0;
+  text-align: right;
+}
+
+.third-block__title {
+  margin: 0 0 13px 0;
+}
+
 .main {
   min-height: 100vh;
   background: url("../images/system_img/bg-main.jpg") center/cover no-repeat;
@@ -330,8 +451,13 @@ svg rect {
 
 .main__logo {
   margin: 0 auto 50px auto;
-  width: 87px;
-  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 262px;
 }
 
 .main__logo img {
@@ -372,28 +498,15 @@ svg rect {
 
 .main__text-block {
   background: #1f2229;
-  -webkit-transform: rotate(-6.81deg) translateY(20px);
-      -ms-transform: rotate(-6.81deg) translateY(20px);
-          transform: rotate(-6.81deg) translateY(20px);
+  -webkit-transform: rotate(3.18deg) translateY(20px);
+      -ms-transform: rotate(3.18deg) translateY(20px);
+          transform: rotate(3.18deg) translateY(20px);
   color: #ffffff;
   padding: 5px 16px 20px 16px;
 }
 
-.main__subtitle {
-  font-family: "Stencil";
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.main__title {
-  font-family: "Stencil";
-  font-size: 48px;
-  line-height: 57px;
-  text-transform: uppercase;
-}
-
 .main__text {
-  margin: -5px 0 0 0;
+  margin: 5px 0 0 0;
   font-family: "TeleBold";
   font-size: 15px;
   line-height: 21px;
@@ -407,13 +520,25 @@ svg rect {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+.main__btn-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .main__btn {
-  margin: 70px 0 0 0;
+  margin: 100px 0 0 0;
   background-color: #fff;
   color: #1f2229;
   padding: 15px 44px;
+  position: relative;
+  z-index: 2;
 }
 
 .info {
@@ -554,7 +679,7 @@ svg rect {
 }
 
 .shares {
-  padding: 23px 48px 48px 48px;
+  padding: 30px 48px 48px 48px;
   background: #1f2229;
 }
 
@@ -569,7 +694,7 @@ svg rect {
   font-size: 24px;
   line-height: 34px;
   color: #ffffff;
-  margin: 0 0 35px 0;
+  margin: 0 0 25px 0;
 }
 
 .shares__btn-wrapper {
@@ -586,15 +711,13 @@ svg rect {
   margin: 55px 0 0 0;
 }
 
-.item-share:first-child {
+.item-share--f {
   margin: 0 0 0 0;
 }
 
 .item-share__img {
   width: 114px;
   height: 114px;
-  border-radius: 50%;
-  background: #31c3f2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,20 +733,14 @@ svg rect {
 }
 
 .item-share__img img {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .item-share__body {
   padding: 0 0 0 25px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
 }
 
 .item-share__title {
-  font-family: "TeleBold";
-  font-size: 28px;
-  line-height: 39px;
   color: #ffffff;
 }
 
@@ -638,68 +755,57 @@ svg rect {
 }
 
 .list {
-  padding: 30px 0 5px 0;
+  padding: 47px 0 5px 0;
+}
+
+.list__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .list__title-block {
-  padding: 0 37px;
+  padding: 0 24px 0 10px;
 }
 
 .list__title {
-  font-family: "TeleBold";
-  font-size: 32px;
-  line-height: 45px;
   color: #1f2229;
+  font-size: 24px;
+  line-height: 34px;
 }
 
 .list__text {
   margin: 6px 0 0 0;
-  color: #1f2229;
 }
 
 .list__body {
-  padding: 65px 30px 0 0;
-  background: url("../images/system_img/phone-3.png") left/contain no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: right;
 }
 
-.list__item {
-  margin: 18px 0 0 0;
-  font-family: "TeleBold";
+.list__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 140px;
+          flex: 0 0 140px;
 }
 
-.list__item:first-child {
-  margin: 0 0 0 0;
-}
-
-.list__item span {
-  margin: 0 9px 0 0;
-  font-family: "Stencil";
-  font-size: 24px;
-  line-height: 29px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #1f2229;
-  width: 37px;
-  height: 37px;
-  border-radius: 50%;
-  background: #31c3f2;
-  -webkit-transform: translateY(3px);
-      -ms-transform: translateY(3px);
-          transform: translateY(3px);
+.list__img img {
+  max-width: 100%;
 }
 
 .list__btn {
   border: 1px solid #1f2229;
   color: #1f2229;
   margin: 75px 0 0 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .call {

@@ -1,50 +1,35 @@
 .list {
-	padding: 30px 0 5px 0;
+	padding: 47px 0 5px 0;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
 
 	&__title-block {
-		padding: 0 37px;
+		padding: 0 24px 0 10px;
 	}
 
 	&__title {
-		font-family: "TeleBold";
-		font-size: 32px;
-		line-height: 45px;
 		color: #1f2229;
+		font-size: 24px;
+		line-height: 34px;
 	}
 
 	&__text {
 		margin: 6px 0 0 0;
-		color: #1f2229;
 	}
 
 	&__body {
-		padding: 65px 30px 0 0;
-		background: url("../images/system_img/phone-3.png") left / contain no-repeat;
+		display: flex;
 		text-align: right;
 	}
 
-	&__item {
-		margin: 18px 0 0 0;
-		font-family: "TeleBold";
-		&:first-child {
-			margin: 0 0 0 0;
-		}
-		span {
-			margin: 0 9px 0 0;
-			font-family: "Stencil";
-			font-size: 24px;
-			line-height: 29px;
-			display: inline-flex;
-			justify-content: center;
-			align-items: center;
+	&__img {
+		flex: 0 0 140px;
 
-			color: #1f2229;
-
-			width: 37px;
-			height: 37px;
-			border-radius: 50%;
-			background: #31c3f2;
-			transform: translateY(3px);
+		img {
+			max-width: 100%;
 		}
 	}
 
@@ -52,5 +37,6 @@
 		border: 1px solid #1f2229;
 		color: #1f2229;
 		margin: 75px 0 0 0;
+		align-self: center;
 	}
 }

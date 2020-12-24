@@ -5,8 +5,9 @@
 
 	&__logo {
 		margin: 0 auto 50px auto;
-		width: 87px;
-		height: 47px;
+		display: flex;
+		justify-content: space-between;
+		width: 262px;
 		img {
 			max-width: 100%;
 		}
@@ -40,26 +41,13 @@
 
 	&__text-block {
 		background: #1f2229;
-		transform: rotate(-6.81deg) translateY(20px);
+		transform: rotate(3.18deg) translateY(20px);
 		color: #ffffff;
 		padding: 5px 16px 20px 16px;
 	}
 
-	&__subtitle {
-		font-family: "Stencil";
-		font-size: 24px;
-		line-height: 28px;
-	}
-
-	&__title {
-		font-family: "Stencil";
-		font-size: 48px;
-		line-height: 57px;
-		text-transform: uppercase;
-	}
-
 	&__text {
-		margin: -5px 0 0 0;
+		margin: 5px 0 0 0;
 		font-family: "TeleBold";
 		font-size: 15px;
 		line-height: 21px;
@@ -69,12 +57,24 @@
 		width: 100%;
 		display: flex;
 		justify-content: center;
+		position: relative;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 50%;
+
+			transform: translateX(-50%);
+		}
 	}
 
 	&__btn {
-		margin: 70px 0 0 0;
+		margin: 100px 0 0 0;
 		background-color: #fff;
 		color: #1f2229;
 		padding: 15px 44px;
+
+		position: relative;
+		z-index: 2;
 	}
 }

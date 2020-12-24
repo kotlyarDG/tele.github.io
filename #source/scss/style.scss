@@ -192,6 +192,108 @@ svg {
 	}
 }
 
+.first-block {
+	padding: 32px 0 42px 0;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 347px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		color: #1f2229;
+	}
+
+	&__text {
+		max-width: 285px;
+	}
+}
+
+.second-block {
+	padding: 53px 0 14px 0;
+	background: url("../images/system_img/bg-block-2.svg") left bottom / contain no-repeat;
+
+	&__wrapper {
+		width: 100%;
+	}
+
+	&__title {
+		font-size: 32px;
+		line-height: 45px;
+		max-width: 322px;
+		margin: 0 auto 40px auto;
+	}
+
+	&__body {
+		padding: 0 16px 0 0;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	&__img {
+		flex: 0 1 50%;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__info {
+		flex: 0 1 50%;
+	}
+
+	&__text {
+		span {
+			font-weight: bold;
+		}
+	}
+
+	&__text-ps {
+		color: #fff;
+		text-align: right;
+		max-width: 318px;
+		margin: 15px 28px 0 auto;
+
+		span {
+			font-weight: bold;
+		}
+	}
+}
+
+.third-block {
+	padding: 65px 0 33px 0;
+
+	&__wrapper {
+	}
+
+	&__item {
+		display: flex;
+	}
+
+	&__body {
+		padding: 35px 0 0 35px;
+
+		&--r {
+			padding: 35px 35px 0 0;
+			text-align: right;
+		}
+	}
+
+	&__title {
+		margin: 0 0 13px 0;
+	}
+
+	&__text {
+	}
+
+	&__img {
+	}
+}
+
 @import "main";
 @import "info";
 @import "share";
