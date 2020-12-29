@@ -43,6 +43,7 @@ $(document).ready(function () {
 			$('.popup__alert').hide()
 			$('.popup__block-ok').hide()
 			$('.popup__form').show()
+			$('#input-number').val('')
 			currentPopup.classList.add('open');
 
 
@@ -102,15 +103,30 @@ $(document).ready(function () {
 	})();
 
 	$('.popup__btn').click(function (e) {
-		if ($('#check').is(':checked')) {
+
+		$('.popup__alert').hide()
+		$('.popup__alert--check').hide()
+		$('.popup__alert--number').hide()
+
+		if ($('#check').is(':checked') & $('#input-number').val() != '') {
 			$('.popup__alert').hide()
 			$('.popup__form').hide()
 			$('.popup__block-ok').show()
 			e.preventDefault()
 		} else {
-			$('.popup__alert').show()
-			e.preventDefault()
+
+			if (!$('#check').is(':checked')) {
+				$('.popup__alert').show()
+				$('.popup__alert--check').show()
+				e.preventDefault()
+			}
+			if ($('#input-number').val() == '') {
+				$('.popup__alert').show()
+				$('.popup__alert--number').show()
+				e.preventDefault()
+			}
 		}
+
 	});
 
 

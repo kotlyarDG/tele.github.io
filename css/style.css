@@ -285,7 +285,7 @@ svg rect {
 }
 
 .popup__btn {
-  margin: 40px 0 0 0;
+  margin: 80px 0 0 0;
   background-color: #fff;
   color: #1f2229;
   border: 1px solid #1f2229;
@@ -293,7 +293,7 @@ svg rect {
 
 @media (max-width: 375px) {
   .popup__btn {
-    margin: 60px 0 0 0;
+    margin: 100px 0 0 0;
   }
 }
 
@@ -306,6 +306,10 @@ svg rect {
   top: 57%;
   max-width: 70%;
   display: none;
+}
+
+.popup__alert span {
+  display: block;
 }
 
 .popup__block-ok {

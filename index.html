@@ -246,13 +246,17 @@
 						<div class="popup__close close-popup"><img src="images/system_img/close-popup.svg" alt=""></div>
 					</div>
 					<form action="" class="popup__form">
-						<input type="number" name="" id="" class="popup__input" placeholder="Введите ваш номер телефона">
+						<input type="number" name="" id="input-number" class="popup__input"
+							placeholder="Введите ваш номер телефона">
 						<input type="checkbox" name="" id="check" class="popup__check-input">
 						<label class="popup__check" for="check">
 							Обработка персональных данных
 						</label>
 						<button type="submit" class="popup__btn btn">Заказать обратный звонок</button>
-						<p class="popup__alert">Необходимо согласится с обработкой персональных данных</p>
+						<p class="popup__alert">
+							<span class="popup__alert--check">Необходимо согласится с обработкой персональных данных</span>
+							<span class="popup__alert--number">Необходимо ввести номер телефона</span>
+						</p>
 					</form>
 					<div class="popup__block-ok">
 						<p class="popup__title-ok">Спасибо за заявку!</p>
